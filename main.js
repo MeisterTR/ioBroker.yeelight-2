@@ -547,7 +547,7 @@ function setResponse(aktYeelight, result) {
                 }
             }
             if (!(result[1] === "")) {
-                adapter.setState(sid + '.active_bright', result[1], true);
+                adapter.setState(sid + '.active_bright', Number(result[1]), true);
             }
             if (!(result[2] === "")) {
                 adapter.setState(sid + '.rgb', dec2hex(result[2]), true);
@@ -565,7 +565,7 @@ function setResponse(aktYeelight, result) {
                 }
             }
             if (!(result[4] === "")) {
-                adapter.setState(sid + '.ct', result[4], true);
+                adapter.setState(sid + '.ct', Number(result[4]), true);
             }
         } else {
             adapter.log.warn('EMPTY RESPONSE');
@@ -606,12 +606,12 @@ function initObj(aktYeelight, result) {
                 }
             }
             if (!(result[5] === "")) {
-                addState(sid, 'active_bright', result[5], device);
+                addState(sid, 'active_bright', Number(result[5]), device);
             } else {
-                addState(sid, 'active_bright', result[1], device);
+                addState(sid, 'active_bright', Number(result[1]), device);
             }
             if (!(result[4] === "")) {
-                addState(sid, 'ct', result[4], device);
+                addState(sid, 'ct', Number(result[4]), device);
             }
             if (!(result[2] === "")) {
                 addState(sid, 'rgb', result[2], device);
@@ -639,10 +639,10 @@ function initObj(aktYeelight, result) {
                 }
             }
             if (!(result[7] === "")) {
-                addState(sid, 'hue', result[7], device);
+                addState(sid, 'hue', Number(result[7]), device);
             }
             if (!(result[8] === "")) {
-                addState(sid, 'sat', result[8], device);
+                addState(sid, 'sat', Number(result[8]), device);
             }
             if (!(result[10] === "")) {
                 switch (result[10]) {
@@ -698,7 +698,7 @@ function addState(id, state, val, device) {
         if (device.type === 'ceiling1' ) {
             ct_min = 2600
         };
-        // change ct for pedant 
+        // change ct for pedant
         if (device.type === 'ceiling10' && (state.substring(0, 2) !== "bg_")) {
             ct_min = 2600
         };

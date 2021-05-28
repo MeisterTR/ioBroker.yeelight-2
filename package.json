@@ -1,6 +1,6 @@
 {
   "name": "iobroker.yeelight-2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ioBroker Yeelight Adapter",
   "author": {
     "name": "MeisterTR",

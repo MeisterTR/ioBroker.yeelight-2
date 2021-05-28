@@ -1,13 +1,17 @@
 {
   "common": {
     "name": "yeelight-2",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "news": {
+      "1.0.4": {
+        "en": "fixed data types",
+        "de": "Datentypen korrigiert"
+      },
       "1.0.3": {
         "en": "add Pedant",
         "de": "Leuchte Pedant hinzugefügt"
       },
-      "0.9.6":{
+      "0.9.6": {
         "en": "delete object and smartname bugs fixed  ",
         "de": "Lösche Objekt und Smartname Fehler behoben",
         "ru": "удалить объект и исправить ошибку",
@@ -18,7 +22,7 @@
         "es": "error de eliminar objeto y nombre inteligente solucionado",
         "pl": "usunięto błąd obiektu i nazwy smartname"
       },
-      "0.9.3":{
+      "0.9.3": {
         "en": "fixed  bugs, add manuell light, error handling, fixed reconnect at start",
         "de": "Fehler behoben, manuelles Licht hinzugefügt, Fehlerbehandlung behoben, reconnect beim Start behoben",
         "ru": "исправлены ошибки, добавлена ​​подсветка мануала, обработка ошибок, фиксированное повторное подключение при запуске",
@@ -99,7 +103,6 @@
         "en": "objects not overwirte after restart",
         "de": "Objekte werden nach neustart nicht mehr überschrieben"
       }
-
     },
     "title": "Yeelight controller",
     "titleLang": {
@@ -114,7 +117,7 @@
       "pl": "Sterownik Yeelight",
       "zh-cn": "Yeelight控制器"
     },
-    "desc":  {
+    "desc": {
       "en": "control your Yeelights",
       "de": "steuere deine Yeelights",
       "ru": "контролировать свои Yeelights",
@@ -129,9 +132,7 @@
     "authors": [
       "<MeisterTR <meistertr.smarthome@gmail.com>"
     ],
-    "docs": {
-
-    },
+    "docs": {},
     "license": "MIT",
     "platform": "Javascript/Node.js",
     "mode": "daemon",
@@ -140,15 +141,18 @@
     "enabled": true,
     "messagebox": true,
     "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.yeelight-2/master/admin/yeelight.png",
-    "keywords": ["xiaomi", "yeelight", "mihome"],
+    "keywords": [
+      "xiaomi",
+      "yeelight",
+      "mihome"
+    ],
     "readme": "https://github.com/iobroker-community-adapters/ioBroker.yeelight-2/blob/master/README.md",
     "loglevel": "info",
-    "type": "lighting"
+    "type": "lighting",
+    "installedFrom": "iobroker-community-adapters/ioBroker.yeelight-2#master"
   },
   "native": {
     "devices": []
   },
-  "objects": [
-
-  ]
+  "objects": []
 }
