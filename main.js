@@ -449,7 +449,6 @@ function checkOnline() {
                 if (element.status !== 3) {
                     //turn off
                     adapter.setState(sid + '.info.connect', false, true);
-                    adapter.setState(sid + '.control.power', false, true);
                     adapter.log.debug('YEELIGHT OFFLINE: ' + element.id);
 
                 } else {
@@ -698,7 +697,7 @@ function addState(id, state, val, device) {
         if (device.type === 'ceiling1' ) {
             ct_min = 2600
         };
-        // change ct for pedant 
+        // change ct for pedant
         if (device.type === 'ceiling10' && (state.substring(0, 2) !== "bg_")) {
             ct_min = 2600
         };

@@ -1,8 +1,12 @@
 {
   "common": {
     "name": "yeelight-2",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "news": {
+      "1.0.4": {
+        "en": "fixed connection lost power off bug",
+        "de": "Fehler mit 'power off' bei Verbindungsabbruch behoben"
+      },
       "1.0.3": {
         "en": "add Pedant",
         "de": "Leuchte Pedant hinzugefügt"
